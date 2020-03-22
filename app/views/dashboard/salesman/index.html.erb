@@ -1,2 +1,470 @@
-<h1>Dashboard::Salesman#index</h1>
-<p>Find me in app/views/dashboard/salesman/index.html.erb</p>
+        
+<div class="container-fluid">
+  <div class="row">
+    <div class="alert alert-danger alert-dismissible fade show warnings-alert" role="alert">
+      <a href="#" class="badge badge-danger p-2">Ciclo: 1 3</a>
+      <a href="#" class="badge badge-danger p-2" data-toggle="modal"
+                        data-target="#fullHeightModalRight">Clientes de hoje sem compras: 5 <i
+                            class="fa fa-eye"></i></a>
+      <a href="#" class="badge badge-danger p-2" data-toggle="modal"
+                        data-target="#fullHeightModalLeft">Clientes previstas para hoje: 15 <i
+                            class="fa fa-eye"></i></a>
+      <a href="#" class="badge badge-danger p-2">Tendencia de fechamento: R$ 50.000,00</a>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <ol class="breadcrumb mt-2">
+      <li class="breadcrumb-item">
+        <strong><a href="index.html">Dashboard</a></strong>
+      </li>
+      <li class="breadcrumb-item active">
+        Dashboard
+      </li>
+    </ol>
+  </div>
+  <div class="row row-fix">
+    <ul class="nav nav nav-tabs md-tabs nav-justified info-color-dark" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#nestle" role="tab"
+                            aria-controls="home" aria-selected="true">Nestlé</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#food" role="tab"
+                            aria-controls="profile" aria-selected="false">Food</a>
+      </li>
+    </ul>
+  </div>
+  <div class="row row-fix">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="nestle" role="tabpanel" aria-labelledby="home-tab">
+        <section class="mb-5">
+          <div
+                                class="gradient-card-header unique-color lighten-1 p-3 mb-4 text-center shadow-lg rounded ">
+            <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Performance Nestlé</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mbsm">
+              <div class="card-wrapper">
+                <div id="card-1" class="card card-rotating text-center">
+                  <div class="face front">
+                    <div class="card-up">
+                      <img class="card-img-top" src="img/fat.png"
+                                                        alt="Image with a photo of clouds.">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="font-weight-bold mb-3">Faturamento</h4>
+                      <a class="rotate-btn btn btn-primary" data-card="card-1"> + Info</a>
+                    </div>
+                  </div>
+                  <div class="face back">
+                    <div class="card-body">
+                      <div class="info-sales">
+                        <p class="lead"><span
+                                                                class="badge info-color p-2">Objetivo</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">R$ 150.000</h4>
+                        <p class="lead mt-3"><span
+                                                                class="badge success-color p-2">Acumulado</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">R$ 75.000</h4>
+                        <hr>
+                        <div class="progress md-progress" style="height: 20px">
+                          <div class="progress-bar" role="progressbar"
+                                                                style="width: 50%; height: 20px" aria-valuenow="25"
+                                                                aria-valuemin="0" aria-valuemax="100">50%</div>
+                        </div>
+                      </div>
+                      <hr>
+                      <a class="rotate-btn btn btn-success" data-card="card-1"
+                                                        title="Voltar"><i class="fas fa-chevron-left"></i></a>
+                      <a class="btn btn-success" href="detailssales.html"> Ver+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mbsm">
+              <div class="card-wrapper">
+                <div id="card-2" class="card card-rotating text-center">
+                  <div class="face front">
+                    <div class="card-up">
+                      <img class="card-img-top" src="img/cob.png"
+                                                        alt="Image with a photo of clouds.">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="font-weight-bold mb-3">Cobertura</h4>
+                      <a class="rotate-btn btn btn-primary" data-card="card-2"> + Info</a>
+                    </div>
+                  </div>
+                  <div class="face back">
+                    <div class="card-body">
+                      <div class="info-sales">
+                        <p class="lead"><span
+                                                                class="badge info-color p-2">Objetivo</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">82</h4>
+                        <p class="lead mt-3"><span
+                                                                class="badge success-color p-2">Realizado</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">60</h4>
+                        <hr>
+                        <div class="progress md-progress" style="height: 20px">
+                          <div class="progress-bar" role="progressbar"
+                                                                style="width: 73%; height: 20px" aria-valuenow="25"
+                                                                aria-valuemin="0" aria-valuemax="100">73%</div>
+                        </div>
+                      </div>
+                      <hr>
+                      <a class="rotate-btn btn btn-success" data-card="card-2"
+                                                        title="Voltar"><i class="fas fa-chevron-left"></i></a>
+                      <a class="btn btn-success" href="detailscob.html"> Ver+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mbsm">
+              <div class="card-wrapper">
+                <div id="card-3" class="card card-rotating text-center">
+                  <div class="face front">
+                    <div class="card-up">
+                      <img class="card-img-top" src="img/pos.png"
+                                                        alt="Image with a photo of clouds.">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="font-weight-bold mb-3">Positivação</h4>
+                      <a class="rotate-btn btn btn-primary" data-card="card-3"> + Info</a>
+                    </div>
+                  </div>
+                  <div class="face back">
+                    <div class="card-body">
+                      <div class="info-sales">
+                        <p class="lead"><span
+                                                                class="badge info-color p-2">Previstos</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">286</h4>
+                        <p class="lead mt-3"><span
+                                                                class="badge success-color p-2">Realizados</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">122</h4>
+                        <hr>
+                        <div class="progress md-progress" style="height: 20px">
+                          <div class="progress-bar" role="progressbar"
+                                                                style="width: 43%; height: 20px" aria-valuenow="25"
+                                                                aria-valuemin="0" aria-valuemax="100">43%</div>
+                        </div>
+                      </div>
+                      <hr>
+                      <a class="rotate-btn btn btn-success" data-card="card-3"
+                                                        title="Voltar"><i class="fas fa-chevron-left"></i></a>
+                      <a class="btn btn-success" href="positivacao.html"> Ver+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mbsm">
+              <div class="card-wrapper">
+                <div id="card-4" class="card card-rotating text-center">
+                  <div class="face front">
+                    <div class="card-up">
+                      <img class="card-img-top" src="img/sor.png"
+                                                        alt="Image with a photo of clouds.">
+                    </div>
+                    <div class="card-body">
+                      <h4 class="font-weight-bold mb-3">Sortimento</h4>
+                      <a class="rotate-btn btn btn-primary" data-card="card-4"> + Info</a>
+                    </div>
+                  </div>
+                  <div class="face back">
+                    <div class="card-body">
+                      <div class="info-sales">
+                        <p class="lead"><span
+                                                                class="badge info-color p-2">Possiveis</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">896 pontos</h4>
+                        <p class="lead mt-3"><span
+                                                                class="badge success-color p-2">Realizado</span></p>
+                        <h4 class="h4-responsive mb-0 font-weight-bold">563 pontos</h4>
+                        <hr>
+                        <div class="progress md-progress" style="height: 20px">
+                          <div class="progress-bar" role="progressbar"
+                                                                style="width: 62%; height: 20px" aria-valuenow="25"
+                                                                aria-valuemin="0" aria-valuemax="100">62%</div>
+                        </div>
+                      </div>
+                      <hr>
+                      <a class="rotate-btn btn btn-success" data-card="card-4"
+                                                        title="Voltar"><i class="fas fa-chevron-left"></i></a>
+                      <a class="btn btn-success" href="sortimento.html"> Ver+</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="mb-5">
+          <section class="mb-1 mt-1">
+            <div class="row">
+              <div class="col-md-4 charts-clients">
+                <div
+                                            class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                  <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Análise YYD
+                  </h2>
+                </div>
+                <div class="card p-3">
+                  <div class="chart-wrapper">
+                    <canvas id="bar-canvas1"></canvas>
+                  </div>
+                  <p class="text-canvas1 text-center"></p>
+                </div>
+              </div>
+              <div class="col-md-4 charts-clients">
+                <div
+                                            class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                  <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Análise YTD
+                  </h2>
+                </div>
+                <div class="card p-3">
+                  <div class="chart-wrapper">
+                    <canvas id="bar-canvas2"></canvas>
+                  </div>
+                  <p class="text-canvas2 text-center"></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="card mb-2 info-clients">
+                      <div
+                                                        class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                        <h2 class="h2-responsive mb-0 font-weight-bold text-white ">
+                          Principais Familias</h2>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Ninho Trad/Inst Lata
+                          <span>35,78%</span></li>
+                        <li class="list-group-item">Nescau 2.0 Lata
+                          <span>25,68%</span></li>
+                        <li class="list-group-item">Achoc. Pet <span>23,88%</span>
+                        </li>
+                        <li class="list-group-item">Tabletes Nestlé
+                          <span>20,78%</span></li>
+                        <li class="list-group-item">Candy Bars Nestlé
+                          <span>19,99%</span></li>
+                      </ul>
+                    </div>
+                    <div class="card info-clients mt-1">
+                      <div
+                                                        class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                        <h2 class="h2-responsive mb-0 font-weight-bold text-white ">
+                          Principais Grupos</h2>
+                      </div>
+                      <ul class="list-group">
+                        <li class="list-group-item">Chocolates Nestlé
+                          <span>33,65%</span></li>
+                        <li class="list-group-item">Biscoitos <span>28,78%</span>
+                        </li>
+                        <li class="list-group-item">Leites de Crescimento
+                          <span>25,63%</span></li>
+                        <li class="list-group-item">Cereais familia
+                          <span>24,57%</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <h5 class="h5-responsive mb-0 font-weight-bold">KPI's de Premiação (estimativa)</h5>
+        <hr>
+        <section class="pb-3 mb-3">
+          <div class="row">
+            <div class="col-xl-2 col-md-4 col-sm-4 mb-xl-0 mb-4" data-toggle="tooltip"
+                                    data-placement="top" title="Falta + R$ 50.000,00 para você ganhar + 100,00">
+              <div class="card classic-admin-card unique-color">
+                <div class="card-body">
+                  <div class="pull-right">
+                    <i class="fas fa-cash-register"></i>
+                  </div>
+                  <p class="white-text">Vendas</p>
+                  <h4 class="check h4-responsive">R$ 150,00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 mb-xl-0 mb-4" data-toggle="tooltip"
+                                    data-placement="top" title="Falta +10 Coberturas para você ganhar + 150,00">
+              <div class="card classic-admin-card special-color">
+                <div class="card-body">
+                  <div class="pull-right">
+                    <i class="fas fa-marker"></i>
+                  </div>
+                  <p>Cobertura</p>
+                  <h4 class="check h4-responsive">$ 200,00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 mb-md-0 mb-4" data-toggle="tooltip"
+                                    data-placement="top" title="Falta +100 Positivações para você ganhar + 150,00">
+              <div class="card classic-admin-card teal darken-4">
+                <div class="card-body">
+                  <div class="pull-right">
+                    <i class="fas fa-donate"></i>
+                  </div>
+                  <p>Positivação</p>
+                  <h4 class="check h4-responsive">R$ 100,00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 mb-xl-0 mb-4" data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="Cuidado você está com 1,5% de devolução pode perder seu prêmio">
+              <div class="card classic-admin-card light-green darken-4">
+                <div class="card-body">
+                  <div class="pull-right">
+                    <i class="fas fa-futbol"></i>
+                  </div>
+                  <p>Devolução</p>
+                  <h4 class="check h4-responsive">R$ 50,00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 mb-4" data-toggle="tooltip" data-placement="top"
+                                    title="Falta +150 Pontos para você ganhar + 150,00">
+              <div class="card classic-admin-card brown darken-4">
+                <div class="card-body">
+                  <div class="pull-right">
+                    <i class="fas fa-boxes"></i>
+                  </div>
+                  <p>Sortimento</p>
+                  <h4 class="check h4-responsive">R$ 350,00</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-sm-4 mb-xl-0 mb-4" data-toggle="tooltip"
+                                    data-placement="top"
+                                    title="Esse é sua premiação até o momento vamos pra cima e ganhar + dinheiro">
+              <div class="card classic-admin-card success-color-dark">
+                <div class="card-body">
+                  <div class="pull-right">
+                    <i class="fas fa-trophy"></i>
+                  </div>
+                  <p class="white-text">Total Premiação</p>
+                  <h4 class="check h4-responsive"><strong>R$ 750,00</strong></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted mt-3">** Lembrando que as premiações acima são apenas uma estimativa,
+            isso pode mudar de
+            acordo com o faturamento, devoluções e titulos assumidos e em atraso.</p>
+        </section>
+      </div>
+      <div class="tab-pane fade" id="food" role="tabpanel" aria-labelledby="profile-tab">
+        <section class="mb-5">
+          <div
+                                class="gradient-card-header unique-color lighten-1 p-3 mb-4 text-center shadow-lg rounded ">
+            <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Performance Food</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mbsm">
+              <div class="card text-center shadow-hover">
+                <div class="card-header white-text primary-color font-weight-bold">
+                  Faturamento
+                </div>
+                <div class="card-body text-center">
+                  <div class="info-sales">
+                    <p class="lead mt-3"><span class="badge info-color p-2">Objetivo</span>
+                    </p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">R$ 150.000</h3>
+                    <p class="lead mt-3"><span
+                                                        class="badge success-color p-2">Realizado</span></p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">R$ 75.000</h3>
+                    <hr>
+                    <span class="min-chart my-4" id="chart-sales" data-percent="76"><span
+                                                        class="percent">76</span>
+                      <canvas height="170" width="170"></canvas>
+                    </span>
+                  </div>
+                  <a class="btn btn-success btn-rounded" href="details.html">Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mbsm">
+              <div class="card text-center shadow-hover">
+                <div class="card-header white-text primary-color font-weight-bold">
+                  Cobertura
+                </div>
+                <div class="card-body text-center">
+                  <div class="info-sales">
+                    <p class="lead mt-3"><span class="badge info-color p-2">Objetivo</span>
+                    </p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">90</h3>
+                    <p class="lead mt-3"><span
+                                                        class="badge success-color p-2">Realizado</span></p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">45</h3>
+                    <hr>
+                    <span class="min-chart my-4" id="chart-sales" data-percent="76"><span
+                                                        class="percent">76</span>
+                      <canvas height="170" width="170"></canvas>
+                    </span>
+                  </div>
+                  <a class="btn btn-success btn-rounded" href="details.html">Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0">
+              <div class="card text-center shadow-hover">
+                <div class="card-header white-text primary-color font-weight-bold">
+                  Positivação
+                </div>
+                <div class="card-body text-center">
+                  <div class="info-sales">
+                    <p class="lead mt-3"><span class="badge info-color p-2">Previstos</span>
+                    </p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">200</h3>
+                    <p class="lead mt-3"><span
+                                                        class="badge success-color p-2">Realizado</span></p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">100</h3>
+                    <hr>
+                    <span class="min-chart my-4" id="chart-sales" data-percent="76"><span
+                                                        class="percent">76</span>
+                      <canvas height="170" width="170"></canvas>
+                    </span>
+                  </div>
+                  <a class="btn btn-success btn-rounded" href="details.html">Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-lg-0 mbsm">
+              <div class="card text-center shadow-hover">
+                <div class="card-header white-text primary-color font-weight-bold">
+                  Sortimento
+                </div>
+                <div class="card-body text-center">
+                  <div class="info-sales">
+                    <p class="lead mt-3"><span class="badge info-color p-2">Objetivo</span>
+                    </p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">1.000 pontos</h3>
+                    <p class="lead mt-3"><span
+                                                        class="badge success-color p-2">Atingido</span></p>
+                    <h3 class="h3-responsive mb-0 font-weight-bold">500 pontos</h3>
+                    <hr>
+                    <span class="min-chart my-4" id="chart-sales" data-percent="76"><span
+                                                        class="percent">76</span>
+                      <canvas height="170" width="170"></canvas>
+                    </span>
+                  </div>
+                  <a class="btn btn-success btn-rounded" href="detailssales.html">Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted mt-3">** As premiações de Food são de acordo com o desempenho do
+            vendedor, pois é pago a
+            comissão sobre a venda.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

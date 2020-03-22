@@ -1,2 +1,251 @@
 @import "bootstrap/dist/css/bootstrap.min";
-@import "mdbootstrap/css/mdb.min.css";
+@import "mdbootstrap/css/mdb.min";
+
+/* css resets */
+main {
+  max-width: 100vw;
+  overflow: hidden;
+  min-height: calc(100vh - 50px - 55px);
+}
+
+.row > div, .row > ul, .row > ol, .row > section {
+  width: 100%;
+}
+
+.row-fix {
+  margin: 0 -30px;
+}
+
+.with-link li {
+  display: flex;
+}
+
+.with-link li a {
+  margin-left: auto;
+}
+
+/* red alert */
+.warnings-alert {
+  padding: 8px;
+  margin-bottom: 0px;
+}
+
+.danger-color, ul.stepper li.warning a .circle {
+  background-color: #dc624b!important;
+}
+
+.warnings-alert a {
+  background-color: #dc624b!important;
+  font-size: 14px!important;
+  transition: 0.2s;
+}
+
+.warnings-alert a:hover {
+  opacity: 0.8;
+}
+
+/* nav pages */
+.breadcrumb {
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.md-tabs {
+  padding: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.md-tabs .nav-item a {
+  transition: 0.2s;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.md-tabs .nav-item a:hover{
+  background-color: rgba(0,0,0,.2);
+}
+
+.gradient-card-header {
+  padding: 5px!important;
+  font-size: 10px!important;
+  font-weight: 500!important;
+}
+
+.mdb-skin .card-header, .mdb-skin .form-header, .info-color{
+  background-color: #2b89d6!important;
+}
+
+.success-color {
+  background-color: #45ae70!important;
+}
+
+.btn {
+  border-radius: 2px;
+  font-weight: 500;
+  transition: 0.2s;
+  padding: 5px 30px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-success {
+  background-color: #45ae70!important;
+}
+
+.modal-dialog.modal-notify.modal-primary .badge, .modal-dialog.modal-notify.modal-primary .modal-header, .pagination.pg-blue .page-item.active .page-link, .pagination.pg-blue .page-item.active .page-link:hover {
+  background-color: #2b89d6!important;
+}
+
+.md-accordion .card .card-header {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+
+.gradient-card-header {
+  box-shadow: none!important;
+  font-size: 12px!important;
+}
+
+.md-form {
+  margin: 5px 0;
+}
+
+.md-form .form-control {
+  margin-bottom: 2px;
+}
+
+.blue-gradient {
+  background: linear-gradient(40deg,#2b89d6,#303f9f)!important
+}
+
+#bar-canvas2, #bar-canvas1 {
+  height: 350px;
+}
+
+.info-clients .list-group-item{
+  padding: 8px;
+}
+
+.info-clients span{
+  float: right;
+}
+
+.info-clients.clear{
+  clear: both;
+}
+
+@media(max-width: 600px) {
+  .row, .row-fix {
+    padding: 0 15px;
+  }
+
+  .side-nav a {
+    height: 70px;
+  }
+
+  .side-nav a img {
+    height: 100%;
+  }
+}
+
+/* default style */
+.side-nav ul li a{
+  font-size: 16px !important ;
+  font-weight: bold !important;
+}
+
+.alert a.badge{
+  font-size: 16px;
+}
+
+.info-sales .badge{
+  width: 100%;
+}
+
+.shadow-hover:hover{
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.breadcrumb {
+  background-color: #999898;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #fff;
+  font-weight: bold;
+  content: "/";
+}
+
+.breadcrumb-item.active{
+  color: #fff !important;
+}
+
+.breadcrumb a{
+  color: #fff;
+  font-weight: bold;
+}
+
+.breadcrumb a:hover{
+  text-decoration: underline;
+}
+
+.top-clients ul li.raz{
+  width: 100%;
+}
+
+.search{
+  width: 30%;
+}
+
+.card-image{
+  background-image: url("../img/nestle-produtos.jpeg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: right;
+  display: initial;
+}
+
+.blue-gradient-rgba {
+  background: linear-gradient(to left,rgba(69,202,252,.4),rgba(48,63,159,.9))!important;
+}
+
+@media only screen and (max-width: 992px) {
+  .mbsm{
+    margin-bottom: 15px;
+  }
+  .alert a.badge{
+    margin-bottom: 10px;
+  }
+  .welcome-sm{
+    display: initial !important;
+    font-size: 15px;
+  }
+  .table-clients tr td, .table-clients tr th{
+    font-size: 12px;
+  }
+  .search{
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 488px) {
+  .welcome-sm{
+    display: initial !important;
+    font-size: 10px;
+  }
+  .table-clients tr td, .table-clients tr th{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar, .navbar-nav  {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
