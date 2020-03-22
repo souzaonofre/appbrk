@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dashboard - Broker MT</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
+</head>
+
+<body class="fixed-sn mdb-skin">
+    <header>
+        <div id="slide-out" class="side-nav sn-bg-5 fixed">
+            <ul class="custom-scrollbar">
+                <li class="logo-sn waves-effect py-3">
+                    <div class="text-center">
+                        <a href="#" class="pl-0"><img src="img/logo.png"></a>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a href="index.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="clientes.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-users"></i> Clientes</a>
+                        </li>
+                        <li>
+                            <a href="verba.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-money-bill-wave"></i> Verbas</a>
+                        </li>
+                        <li>
+                            <a href="desconto.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-percent"></i> Desconto</a>
+                        </li>
+                        <li>
+                            <a href="cadastro.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-file-signature"></i> Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="salvage.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-search-dollar"></i></i> Salvage</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="breadcrumb-dn mr-auto welcome-sm">
+                <p>Olá Fabricio, <span class="date_now"></span></p>
+            </div>
+            <div class="d-flex">
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect"><i class="fas fa-envelope"></i> <span
+                                class="clearfix d-none d-sm-inline-block">Avisos</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Perfil</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Sair</a>
+                            <a class="dropdown-item" href="#">Minha Conta</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <ol class="breadcrumb mt-2">
+                    <li class="breadcrumb-item">
+                        <strong><a href="index.html">Dashboard</a></strong>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        Sortimento
+                    </li>
+                </ol>
+            </div>
+            <div class="row">
+                <section class="mb-1 mt-1">
+                    <div class="gradient-card-header unique-color lighten-1 p-3 mb-4 text-center shadow-lg rounded ">
+                        <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Sortimento Prioritário</h2>
+                    </div>
+                    <div class="card p-3 panels-card">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                <div class="card grey lighten-1">
+                                    <div class="card-image">
+                                        <div class="text-white d-flex h-100 blue-gradient-rgba">
+                                            <div class="first-content align-self-center p-3">
+                                            <h3 class="card-title font-weight-bold">Tradicional</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <hr class="hr-light">
+                                        <div class="justify-content-between mt-2">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Nº de Clientes: 20</p>
+                                                    <p class="mb-0">Nº de SKU Sortimento: 10</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Pontos Possiveis: 200</p>
+                                                    <p class="mb-0">Pontos Realizados: 100</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress md-progress mt-3" style="height: 20px">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%; height: 20px"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-light">
+                                    <div class="card-body pt-0 text-center">
+                                        <h6 class="font-weight-bold mb-1">Média SKU's nesse canal é: 15</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                <div class="card grey lighten-1">
+                                    <div class="card-image">
+                                        <div class="text-white d-flex h-100 blue-gradient-rgba">
+                                            <div class="first-content align-self-center p-3">
+                                            <h3 class="card-title font-weight-bold">AS 1&2 CK</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <hr class="hr-light">
+                                        <div class="justify-content-between mt-2">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Nº de Clientes: 20</p>
+                                                    <p class="mb-0">Nº de SKU Sortimento: 10</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Pontos Possiveis: 200</p>
+                                                    <p class="mb-0">Pontos Realizados: 100</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress md-progress mt-3" style="height: 20px">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%; height: 20px"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-light">
+                                    <div class="card-body pt-0 text-center">
+                                        <h6 class="font-weight-bold mb-1">Média SKU's nesse canal é: 15</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                <div class="card grey lighten-1">
+                                    <div class="card-image">
+                                        <div class="text-white d-flex h-100 blue-gradient-rgba">
+                                            <div class="first-content align-self-center p-3">
+                                            <h3 class="card-title font-weight-bold">AS 3&4 CK</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <hr class="hr-light">
+                                        <div class="justify-content-between mt-2">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Nº de Clientes: 20</p>
+                                                    <p class="mb-0">Nº de SKU Sortimento: 10</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Pontos Possiveis: 200</p>
+                                                    <p class="mb-0">Pontos Realizados: 100</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress md-progress mt-3" style="height: 20px">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%; height: 20px"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-light">
+                                    <div class="card-body pt-0 text-center">
+                                        <h6 class="font-weight-bold mb-1">Média SKU's nesse canal é: 15</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                <div class="card grey lighten-1">
+                                    <div class="card-image">
+                                        <div class="text-white d-flex h-100 blue-gradient-rgba">
+                                            <div class="first-content align-self-center p-3">
+                                            <h3 class="card-title font-weight-bold">AS 5+ CK</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <hr class="hr-light">
+                                        <div class="justify-content-between mt-2">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Nº de Clientes: 20</p>
+                                                    <p class="mb-0">Nº de SKU Sortimento: 10</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Pontos Possiveis: 200</p>
+                                                    <p class="mb-0">Pontos Realizados: 100</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress md-progress mt-3" style="height: 20px">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%; height: 20px"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-light">
+                                    <div class="card-body pt-0 text-center">
+                                        <h6 class="font-weight-bold mb-1">Média SKU's nesse canal é: 15</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-1">
+                                <div class="card grey lighten-1">
+                                    <div class="card-image">
+                                        <div class="text-white d-flex h-100 blue-gradient-rgba">
+                                            <div class="first-content align-self-center p-3">
+                                            <h3 class="card-title font-weight-bold">Conveniência</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <hr class="hr-light">
+                                        <div class="justify-content-between mt-2">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Nº de Clientes: 20</p>
+                                                    <p class="mb-0">Nº de SKU Sortimento: 10</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Pontos Possiveis: 200</p>
+                                                    <p class="mb-0">Pontos Realizados: 100</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress md-progress mt-3" style="height: 20px">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%; height: 20px"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-light">
+                                    <div class="card-body pt-0 text-center">
+                                        <h6 class="font-weight-bold mb-1">Média SKU's nesse canal é: 15</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 p-1 text-white">
+                                <div class="card blue-gradient">
+                                    <div class="text-white d-flex h-100">
+                                        <div class="first-content align-self-center p-3">
+                                        <h3 class="card-title font-weight-bold">Total Geral</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <hr class="hr-light">
+                                        <div class="justify-content-between mt-2">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Nº de Clientes: 20</p>
+                                                    <p class="mb-0">Nº de SKU Sortimento: 10</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <p class="mb-0">Pontos Possiveis: 200</p>
+                                                    <p class="mb-0">Pontos Realizados: 100</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress md-progress mt-3" style="height: 20px">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%; height: 20px"
+                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                        </div>
+                                    </div>
+                                    <hr class="hr-light">
+                                    <div class="card-body pt-0 text-center">
+                                        <h6 class="font-weight-bold mb-1">Média SKU's nesse canal é: 15</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer pt-0 mt-5 rgba-stylish-light">
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid">
+                © 2019 Copyright: <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> Broker Mato
+                    Grosso
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/custom.js"></script>
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Initializations -->
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+
+        var container = document.querySelector('.custom-scrollbar');
+        var ps = new PerfectScrollbar(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+        // Tooltips Initialization
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+
+    <script>
+        $(function () {
+            $('.min-chart#chart-sales').easyPieChart({
+                barColor: "#FF5252",
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+        });
+    </script>
+    <script>
+        function getCurrentDate() {
+            var date_now = new Date();
+            var date_formated = date_now.toLocaleDateString();
+            var days = new Array(
+                'Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'
+            );
+            return 'Hoje é ' + days[date_now.getDay()] + ' dia ' + date_formated + '.';
+        }
+        document.getElementsByClassName('date_now')[0].innerHTML = getCurrentDate();
+    </script>
+</body>
+
+</html>

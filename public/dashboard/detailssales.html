@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dashboard - Broker MT</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    </style>
+</head>
+
+<body class="fixed-sn mdb-skin">
+    <header>
+        <div id="slide-out" class="side-nav sn-bg-5 fixed">
+            <ul class="custom-scrollbar">
+                <li class="logo-sn waves-effect py-3">
+                    <div class="text-center">
+                        <a href="#" class="pl-0"><img src="img/logo.png"></a>
+                    </div>
+                </li>
+                <hr>
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a href="index.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="clientes.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-users"></i> Clientes</a>
+                        </li>
+                        <li>
+                            <a href="verba.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-money-bill-wave"></i> Verbas</a>
+                        </li>
+                        <li>
+                            <a href="desconto.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-percent"></i> Desconto</a>
+                        </li>
+                        <li>
+                            <a href="cadastro.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-file-signature"></i> Cadastro</a>
+                        </li>
+                        <li>
+                            <a href="salvage.html" class="collapsible-header waves-effect">
+                                <i class="fas fa-search-dollar"></i></i> Salvage</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <nav class="navbar fixed-top navbar-expand-lg scrolling-navbar double-nav">
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="breadcrumb-dn mr-auto welcome-sm">
+                <p>Olá Fabricio, <span class="date_now"></span></p>
+            </div>
+            <div class="d-flex">
+                <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect"><i class="fas fa-envelope"></i> <span
+                                class="clearfix d-none d-sm-inline-block">Avisos</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect" href="#" id="userDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Perfil</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Sair</a>
+                            <a class="dropdown-item" href="#">Minha Conta</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <ol class="breadcrumb mt-2">
+                    <li class="breadcrumb-item">
+                        <strong><a href="index.html">Dashboard</a></strong>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        Vendas
+                    </li>
+                </ol>
+            </div>
+            <div class="row">
+                <section class="mb-1 mt-1">
+                    <div class="gradient-card-header unique-color lighten-1 p-3 mb-3 text-center shadow-lg rounded ">
+                        <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Vendas Nestlé</h2>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-6 mbsm">
+                            <div class="card top-clients">
+                                <div
+                                    class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                    <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Venda por canal mês
+                                        atual</h2>
+                                </div>
+                                <div class="table-responsive text-nowrap">
+                                    <!--Table-->
+                                    <table class="table table-striped table-clients">
+                                        <!--Table head-->
+                                        <thead>
+                                            <tr>
+                                                <th>Canal</th>
+                                                <th>Carteira</th>
+                                                <th>Cobertura</th>
+                                                <th>Acumulado</th>
+                                                <th>% Grupo</th>
+                                            </tr>
+                                        </thead>
+                                        <!--Table head-->
+
+                                        <!--Table body-->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">AS 1e2 CK</th>
+                                                <td>5</td>
+                                                <td>2</td>
+                                                <td>R$: 5.000,00</td>
+                                                <td>2,8%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">AS 3e4 CK</th>
+                                                <td>6</td>
+                                                <td>4</td>
+                                                <td>R$: 8.000,00</td>
+                                                <td>4,8%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">AS 5a9 CK</th>
+                                                <td>20</td>
+                                                <td>10</td>
+                                                <td>R$: 55.000,00</td>
+                                                <td>32,8%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">AS 10+ CK</th>
+                                                <td>4</td>
+                                                <td>4</td>
+                                                <td>R$: 115.000,00</td>
+                                                <td>39,8%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tradicional</th>
+                                                <td>6</td>
+                                                <td>5</td>
+                                                <td>R$: 9.000,00</td>
+                                                <td>3,5%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Farma C</th>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>R$: 0,00</td>
+                                                <td>0,0%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Farma B</th>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>R$: 0,00</td>
+                                                <td>0,0%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Atacado</th>
+                                                <td>2</td>
+                                                <td>2</td>
+                                                <td>R$: 15.000,00</td>
+                                                <td>4,8%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Atacado Doceiro</th>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>R$: 0,00</td>
+                                                <td>0,0%</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Conveniência</th>
+                                                <td>25</td>
+                                                <td>15</td>
+                                                <td>R$: 5.000,00</td>
+                                                <td>2,8%</td>
+                                            </tr>
+                                        </tbody>
+                                        <!--Table body-->
+
+                                    </table>
+                                    <!--Table-->
+                                </div>
+                                <div class="stylish-color p-2 mt-2 rounded-sm">
+                                    <h5 class="h5-responsive text-white font-weight-bold">Total: <strong>R$:
+                                            385.000,00</strong></h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card top-clients">
+                                <div
+                                    class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                    <h2 class="h2-responsive mb-0 font-weight-bold text-white ">20 Maiores mês anterior
+                                    </h2>
+                                </div>
+                                <div class="table-responsive text-nowrap">
+                                    <!--Table-->
+                                    <table class="table table-striped table-clients">
+
+                                        <!--Table head-->
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Sold</th>
+                                                <th>Razão Social</th>
+                                                <th>Acumulado</th>
+                                            </tr>
+                                        </thead>
+                                        <!--Table head-->
+
+                                        <!--Table body-->
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>5232531</td>
+                                                <td>Supermercado Tropical</td>
+                                                <td>R$: 56.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>5321657</td>
+                                                <td>Supermercado Real</td>
+                                                <td>R$: 40.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>3256145</td>
+                                                <td>Tropical Supermercado</td>
+                                                <td>R$: 39.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>6012547</td>
+                                                <td>Supermercado Dia Dia</td>
+                                                <td>R$: 36.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>3265874</td>
+                                                <td>Supermercado Manaua</td>
+                                                <td>R$: 29.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>5123566</td>
+                                                <td>Extra Supermercado</td>
+                                                <td>R$: 25.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>3265987</td>
+                                                <td>Supermercado Nacional</td>
+                                                <td>R$: 24.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>2564125</td>
+                                                <td>Supermercado Faturão</td>
+                                                <td>R$: 20.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td>2369854</td>
+                                                <td>Supermercado Economia</td>
+                                                <td>R$: 18.000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td>6142576</td>
+                                                <td>Sampaio Supermercado</td>
+                                                <td>R$: 15.000,00</td>
+                                            </tr>
+                                        </tbody>
+                                        <!--Table body-->
+
+                                    </table>
+                                    <!--Table-->
+                                </div>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination pg-blue justify-content-center">
+                                        <li class="page-item ">
+                                            <a class="page-link" tabindex="-1"><i
+                                                    class="fas fa-chevron-circle-left"></i></a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link">1</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item ">
+                                            <a class="page-link"><i class="fas fa-chevron-circle-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="mb-2 mt-4">
+                    <div class="gradient-card-header unique-color lighten-1 p-3 mb-4 text-center shadow-lg rounded ">
+                        <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Mix VBC mês atual</h2>
+                    </div>
+                    <div class="row text-center mb-2">
+                        <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+                            <div class="card">
+                                <div
+                                    class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                    <h5 class="h5-responsive mb-0 text-white ">Estrategico</h5>
+                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ideal</th>
+                                            <th scope="col">Realizado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">40.00%</th>
+                                            <td>47.20%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <h5>Acumulado</h5>
+                                <h3><strong>R$ 60.000,00</strong></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+                            <div class="card">
+                                <div
+                                    class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                    <h5 class="h5-responsive mb-0 text-white ">Mix Pilar</h5>
+                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ideal</th>
+                                            <th scope="col">Realizado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">20.00%</th>
+                                            <td>23,80%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <h5>Acumulado</h5>
+                                <h3><strong>R$ 50.000,00</strong></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+                            <div class="card">
+                                <div
+                                    class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                    <h5 class="h5-responsive mb-0 text-white ">High Pull</h5>
+                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ideal</th>
+                                            <th scope="col">Realizado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">39.00%</th>
+                                            <td>28,40%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <h5>Acumulado</h5>
+                                <h3><strong>R$ 80.000,00</strong></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+                            <div class="card">
+                                <div
+                                    class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                    <h5 class="h5-responsive mb-0 text-white ">High High Pull</h5>
+                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ideal</th>
+                                            <th scope="col">Realizado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1.00%</th>
+                                            <td>0,80%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                                <h5>Acumulado</h5>
+                                <h3><strong>R$ 10.000,00</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="mb-5 mt-4">
+                    <div class="gradient-card-header unique-color lighten-1 p-3 mb-4 text-center shadow-lg rounded ">
+                        <h2 class="h2-responsive mb-0 font-weight-bold text-white ">Grupo/Familia mês atual</h2>
+                    </div>
+                    <div class="row text-center mb-3">
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <!--Accordion wrapper-->
+                            <div class="accordion md-accordion" id="accordionEx1" role="tablist"
+                                aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card">
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingTwo1">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                            href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                            <div
+                                                class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                                <h5 class="h5-responsive mb-0 text-white ">Bebidas RTD<i
+                                                        class="fas fa-angle-down rotate-icon"></i></h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div id="collapseTwo1" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo1" data-parent="#accordionEx1">
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Familia</th>
+                                                        <th scope="col">Realizado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">RTD 1L</th>
+                                                        <td>R$ 500,00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <hr>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+
+                                                        <th scope="col"><strong>Total Realizado</strong></th>
+                                                        <th scope="col"><strong>% Atingido</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">R$ 6.000,00</th>
+                                                        <td>R$ 6.000,00</td>
+                                                        <td>100%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion card -->
+                                <!-- Accordion card -->
+                                <div class="card">
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingTwo2">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                            href="#collapseTwo21" aria-expanded="false" aria-controls="collapseTwo21">
+                                            <div
+                                                class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                                <h5 class="h5-responsive mb-0 text-white ">Bebidas Pós<i
+                                                        class="fas fa-angle-down rotate-icon"></i></h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div id="collapseTwo21" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo21" data-parent="#accordionEx1">
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Familia</th>
+                                                        <th scope="col">Realizado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Nescau 400g</th>
+                                                        <td>R$ 1.500,00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <hr>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><strong>Total Realizado</strong></th>
+                                                        <th scope="col"><strong>% Faturamento</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>R$ 50.000,00</td>
+                                                        <td>22,36%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion card -->
+                                <!-- Accordion card -->
+                                <div class="card">
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingThree31">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                            href="#collapseThree31" aria-expanded="false"
+                                            aria-controls="collapseThree31">
+                                            <div
+                                                class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                                <h5 class="h5-responsive mb-0 text-white ">Chocolates Nestlé<i
+                                                        class="fas fa-angle-down rotate-icon"></i></h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div id="collapseThree31" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingThree31" data-parent="#accordionEx1">
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Familia</th>
+                                                        <th scope="col">Realizado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Jumbo</th>
+                                                        <td>R$ 600,00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <hr>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><strong>Total Realizado</strong></th>
+                                                        <th scope="col"><strong>% Faturamento</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>R$ 50.000,00</td>
+                                                        <td>22,36%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+                            <!-- Accordion wrapper -->
+                        </div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <!--Accordion wrapper-->
+                            <div class="accordion md-accordion" id="accordionEx1" role="tablist"
+                                aria-multiselectable="true">
+                                <!-- Accordion card -->
+                                <div class="card">
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingTwo1">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                            href="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                                            <div
+                                                class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                                <h5 class="h5-responsive mb-0 text-white ">Bebidas RTD<i
+                                                        class="fas fa-angle-down rotate-icon"></i></h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- Card body -->
+                                    <div id="collapseTwo1" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo1" data-parent="#accordionEx1">
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Familia</th>
+                                                        <th scope="col">Realizado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">RTD 200ml</th>
+                                                        <td>R$ 1.500,00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <hr>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><strong>Total Realizado</strong></th>
+                                                        <th scope="col"><strong>% Faturamento</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>R$ 50.000,00</td>
+                                                        <td>22,36%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Accordion card -->
+
+                                <!-- Accordion card -->
+                                <div class="card">
+
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingTwo2">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                            href="#collapseTwo21" aria-expanded="false" aria-controls="collapseTwo21">
+                                            <div
+                                                class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                                <h5 class="h5-responsive mb-0 text-white ">Bebidas Pós<i
+                                                        class="fas fa-angle-down rotate-icon"></i></h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Card body -->
+                                    <div id="collapseTwo21" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo21" data-parent="#accordionEx1">
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Familia</th>
+                                                        <th scope="col">Realizado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Nescau 400g</th>
+                                                        <td>R$ 5.000,00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <hr>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><strong>Total Realizado</strong></th>
+                                                        <th scope="col"><strong>% Faturamento</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>R$ 50.000,00</td>
+                                                        <td>22,36%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Accordion card -->
+
+                                <!-- Accordion card -->
+                                <div class="card">
+
+                                    <!-- Card header -->
+                                    <div class="card-header" role="tab" id="headingThree31">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1"
+                                            href="#collapseThree31" aria-expanded="false"
+                                            aria-controls="collapseThree31">
+                                            <div
+                                                class="gradient-card-header special-color-dark lighten-1 p-3 text-center shadow-lg rounded ">
+                                                <h5 class="h5-responsive mb-0 text-white ">Chocolates Nestlé<i
+                                                        class="fas fa-angle-down rotate-icon"></i></h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- Card body -->
+                                    <div id="collapseThree31" class="collapse" role="tabpanel"
+                                        aria-labelledby="headingThree31" data-parent="#accordionEx1">
+                                        <div class="card-body">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Familia</th>
+                                                        <th scope="col">Objetivo</th>
+                                                        <th scope="col">Realizado</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Jumbo</th>
+                                                        <td>R$ 600,00</td>
+                                                        <td>R$ 600,00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <hr>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col"><strong>Total Realizado</strong></th>
+                                                        <th scope="col"><strong>% Faturamento</strong></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>R$ 50.000,00</td>
+                                                        <td>22,36%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Accordion card -->
+                            </div>
+                            <!-- Accordion wrapper -->
+                        </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer pt-0 mt-5 rgba-stylish-light">
+        <div class="footer-copyright py-3 text-center">
+            <div class="container-fluid">
+                © 2019 Copyright: <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> Broker Mato
+                    Grosso
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="js/custom.js"></script>
+    <!-- JQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Initializations -->
+    <script>
+        // SideNav Initialization
+        $(".button-collapse").sideNav();
+
+        var container = document.querySelector('.custom-scrollbar');
+        var ps = new PerfectScrollbar(container, {
+            wheelSpeed: 2,
+            wheelPropagation: true,
+            minScrollbarLength: 20
+        });
+
+        // Material Select Initialization
+        $(document).ready(function () {
+            $('.mdb-select').material_select();
+        });
+
+        // Tooltips Initialization
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        function getCurrentDate() {
+            var date_now = new Date();
+            var date_formated = date_now.toLocaleDateString();
+            var days = new Array(
+                'Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'
+            );
+            return 'Hoje é ' + days[date_now.getDay()] + ' dia ' + date_formated + '.';
+        }
+        document.getElementsByClassName('date_now')[0].innerHTML = getCurrentDate();
+    </script>
+</body>
+
+</html>
